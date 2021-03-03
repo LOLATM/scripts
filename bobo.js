@@ -3,7 +3,7 @@ var obj = JSON.parse(body);
 
 
 
-  obj ={
+  obj.data={
     "code": 0,
     
   }
