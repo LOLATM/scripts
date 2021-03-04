@@ -1,0 +1,10 @@
+http= a1.ap.fastqvpn.com:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=香港
+http=a2.ap.fastqvpn.com:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=香港🇭🇰
+http=ap1-jp.er3.xyz:29985, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=日本
+http=ap1-us.er3.xyz:29988, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=美国
+http=ap1-sg.er3.xyz:29986, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=新加坡LINODE
+http=ap1-uk.er3.xyz:29987, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=英国
+http=a1.er3.xyz:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=新加坡COOLNET
+http=ap1-ge.er3.xyz:29984, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=德国
+http=ap1-ca.er3.xyz:29983, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=加拿大
+http=ap1-au.er3.xyz:29982, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=澳大利亚
