@@ -8,15 +8,13 @@ http=a1.er3.xyz:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c9
 http=ap1-ge.er3.xyz:29984, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=德国
 http=ap1-ca.er3.xyz:29983, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=加拿大
 http=ap1-au.er3.xyz:29982, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=澳大利亚
-http = a2.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 柠檬玩机交流
-http = a3.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 柠檬玩机交流1
-http = a4.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 柠檬玩机交流2
-http = a1.er3.xyz:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 柠檬玩机交流3
-http = global.ap.fastqvpn.com:29986,username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c8719, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流4
-http = global.ap.fastqvpn.com:29982, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流5
-http = global.ap.fastqvpn.com:29983, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流6
-http = global.ap.fastqvpn.com:29984, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c8719, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流7
-http = global.ap.fastqvpn.com:29987, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流9
-http = global.ap.fastqvpn.com:29988, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流10
-http = global.ap.fastqvpn.com:29985, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 柠檬玩机交流11
+http = a2.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 香港
+http = a3.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 新加坡
+http = a4.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 香港
+http = a1.er3.xyz:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 新加坡
+http = global.ap.fastqvpn.com:29982, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 悉尼
+http = global.ap.fastqvpn.com:29983, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 多伦多
+http = global.ap.fastqvpn.com:29987, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 伦敦
+http = global.ap.fastqvpn.com:29988, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 美国
+http = global.ap.fastqvpn.com:29985, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 东京
 
