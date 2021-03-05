@@ -2,7 +2,7 @@
     "id": "LOLATM",
     "name": "LOLATM 脚本订阅",
     "author": "@ZIYE",
-    "icon": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/ziye.png",
+    "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bujidao.png",
     "repo": "https://github.com/LOLATM",
     "apps": [{
            
@@ -41,7 +41,7 @@
                 }
             ],
             "repo": "https://raw.githubusercontent.com/LOLATM/scripts/main/ymzhuan.js",
-            "icons": ["https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.png", "https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ymzhuan.png"],
+            "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bujidao.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/bujidao.png"],
             "script": "https://raw.githubusercontent.com/LOLATM/scripts/main/ymzhuan.js"
         }
     ]
