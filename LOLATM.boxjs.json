@@ -4,8 +4,7 @@
     "author": "@ZIYE",
     "icon": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/ziye.png",
     "repo": "https://github.com/ziye66666",
-    "apps": [
-      {
+    "apps": [{
             "id": "ymzhuan",
             "name": "羊毛赚APP",
            "keys": ["ymzhuanggbody", "ymzhuanspbody", "ymzhuantxbody",  "ymzhuanggbody2", "ymzhuanspbody2", "ymzhuantxbody2", "ymzhuanggbody3", "ymzhuanspbody3", "ymzhuantxbody3", "ymzhuanggbody4", "ymzhuanspbody4", "ymzhuantxbody4",  "ymzhuanggbody5", "ymzhuanspbody5", "ymzhuantxbody5", "ymzhuanggbody6", "ymzhuanspbody6", "ymzhuantxbody6",  "ymzhuanggbody7", "ymzhuanspbody7", "ymzhuantxbody7",  "ymzhuanggbody8", "ymzhuanspbody8", "ymzhuantxbody8",  "ymzhuanggbody9", "ymzhuanspbody9", "ymzhuantxbody9",  "ymzhuanggbody10", "ymzhuanspbody10", "ymzhuantxbody10",  "ymzhuanggbody11", "ymzhuanspbody11", "ymzhuantxbody11",  "ymzhuanggbody12", "ymzhuanspbody12", "ymzhuantxbody12", "ymzhuanggbody13", "ymzhuanspbody13", "ymzhuantxbody13", "ymzhuanggbody14", "ymzhuanspbody14", "ymzhuantxbody14", "ymzhuanggbody15", "ymzhuanspbody15", "ymzhuantxbody15",  "ymzhuanggbody16", "ymzhuanspbody16", "ymzhuantxbody16", "ymzhuanggbody17", "ymzhuanspbody17", "ymzhuantxbody17",  "ymzhuanggbody18", "ymzhuanspbody18", "ymzhuantxbody18",  "ymzhuanggbody19", "ymzhuanspbody19", "ymzhuantxbody19", "ymzhuanggbody20", "ymzhuanspbody20", "ymzhuantxbody20"],
@@ -44,4 +43,4 @@
             "script": "https://raw.githubusercontent.com/LOLATM/scripts/main/ymzhuan.js"
         }
     ]
-
+}
