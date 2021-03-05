@@ -4,7 +4,7 @@
     "author": "@ZIYE",
     "icon": "https://raw.githubusercontent.com/ziye66666/JavaScript/main/ziye.png",
     "repo": "https://github.com/ziye66666",
-    "apps": [{
+    "apps": [
       {
             "id": "ymzhuan",
             "name": "羊毛赚APP",
@@ -44,4 +44,4 @@
             "script": "https://raw.githubusercontent.com/LOLATM/scripts/main/ymzhuan.js"
         }
     ]
-}
+
