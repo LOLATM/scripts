@@ -1,4 +1,4 @@
-
+/*
 更新时间: 2021-02-17 22:50
 赞赏:中青邀请码`46308484`,农妇山泉 -> 有点咸，万分感谢
 本脚本仅适用于中青看点极速版领取青豆
@@ -10,7 +10,7 @@
 const $ = new Env("中青看点")
 $.date = new Date();
 $.utc8 = $.date.getTime() + ($.date.getTimezoneOffset() * 60 * 1000) + 8 * 60 * 60 * 1000;
-let notifyInterval = $.getdata("notifytimes")||0 //通知间隔，默认抽奖每50次通知一次，如需关闭全部通知请设为0
+let notifyInterval = $.getdata("notifytimes")||50 //通知间隔，默认抽奖每50次通知一次，如需关闭全部通知请设为0
 let s = $.getdata('delay_rotary_zq')||"10" //转盘延迟时间
 const notify = $.isNode() ? require('./sendNotify') : '';
 const ONCard = $.getdata('zqcard')||"false" //早起打卡开关
