@@ -1,22 +1,4 @@
-http= a1.ap.fastqvpn.com:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=香港
-http=a2.ap.fastqvpn.com:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=新加坡SG
-http=ap1-jp.er3.xyz:29985, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=日本
-http=ap1-us.er3.xyz:29988, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=美国
-http=ap1-sg.er3.xyz:29986, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=新加坡LINODE
-http=ap1-uk.er3.xyz:29987, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=英国
-http=a1.er3.xyz:29980, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=新加坡COOLNET
-http=ap1-ge.er3.xyz:29984, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=德国
-http=ap1-ca.er3.xyz:29983, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=加拿大
-http=ap1-au.er3.xyz:29982, username= 418608943162458112, password= 41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=澳大利亚
-http = a2.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 香港
-http = a3.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 新加坡
-http = a4.ap.fastqvpn.com:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 香港
-http = a1.er3.xyz:29980, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false,fast-open = false, udp-relay = false, tag = 新加坡
-http = global.ap.fastqvpn.com:29982, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 悉尼
-http = global.ap.fastqvpn.com:29983, username =  418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 多伦多
-http = global.ap.fastqvpn.com:29987, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 伦敦
-http = global.ap.fastqvpn.com:29988, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 美国
-http = global.ap.fastqvpn.com:29985, username = 418608943162458112, password =  41a6e1aa-56ab-4c93-b3dc-a4604ee5c871, over-tls = true, tls-verification = false, fast-open = false, udp-relay = false, tag = 东京
+
 shadowsocks=sk03.pjj.life:12334, method=aes-128-cfb, password=pjj.one, ssr-protocol=auth_aes128_sha1, ssr-protocol-param=41828954:1e872362-23a3-4e2b-885f-6ec0ad88cbbe, obfs=plain, obfs-host=, tag=韩国03
 shadowsocks=sk04.pjj.life:12334, method=aes-128-cfb, password=pjj.one, ssr-protocol=auth_aes128_sha1, ssr-protocol-param=41828954:1e872362-23a3-4e2b-885f-6ec0ad88cbbe, obfs=plain, obfs-host=, tag=韩国04
 shadowsocks=us01.pjj.life:12334, method=aes-128-cfb, password=pjj.one, ssr-protocol=auth_aes128_sha1, ssr-protocol-param=41828954:1e872362-23a3-4e2b-885f-6ec0ad88cbbe, obfs=plain, obfs-host=, tag=美国01
