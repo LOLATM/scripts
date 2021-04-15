@@ -40,52 +40,7 @@ https://play.gxhuancai.com/hlplay/task/doTasks script-path=https://raw.githubuse
 hostname = play.gxhuancai.com
 
 
-*/
 
-const $ = new Env('葫芦音乐');
-let status;
-status = (status = ($.getval("hlyystatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const hlyyurlArr = [], hlyyhdArr = [],hlyybodyArr = [],hlyycount = ''
-let times = Math.round(Date.now())
-let hlyyurl = $.getdata('hlyyurl')
-let hlyyhd = $.getdata('hlyyhd')
-let hlyybody = $.getdata('hlyybody')
-let ut = '',id = '',qd='',qdfb='',gg='',sp='',fx='',zs='',tg='',wz='',tgfb=''
-let txsz = ['','BsjB-5WE54sKKCP0kIMORs1WbWzmM5gRg','0r7ipKknU4gqurOo71KH2kPFzkwlohZws','0r7ipKknU4g2s8ACTG4DbU1QFpcUgueU4','pQKf_KdmjH4pS_070l0fhYH0Hs6ltsads','pQKf_KdmjH4hSrW79J7WyU1WbWzmM5gRg'];
-let hltxje = ($.getval('hltxje') || '1');
-let txje = txsz[hltxje]
-
-   
-//葫芦音乐信息
-function hlyyxx(timeout = 0) {
-  return new Promise((resolve) => {
-let url = {
-        url : `https://play.gxhuancai.com/hlplay/task/getUserCoins?av=1.1.3&ut=${ut}`,
-        headers : JSON.parse(hlyyhd),
-}
-      $.get(url, async (err, resp, data) => {
-
-        try {
-    const result = JSON.parse(data)
-
-        if(result.errCode == 00){
-
-        console.log(`\n〔葫芦音用户信息〕\n当前金币余额:${result.data.pagelist[0]} 约等于:${result.data.pagelist[2]}元`)
-
-        
-} else {
-       console.log('\n葫芦音乐错误'+data)
-
-}
-   
-        } catch (e) {
-          //$.logErr(e, resp);
-        } finally {
-          resolve()
-        }
-    },timeout)
-  })
-}
 //葫芦音乐tx名额
 function hlyyme(timeout = 0) {
   return new Promise((resolve) => {
