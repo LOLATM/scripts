@@ -76,42 +76,7 @@ let txje = txsz[hltxje]
           hlyyhd = hlyyhdArr[i];
           $.index = i + 1;
           console.log(`\n 开始【葫芦音乐${$.index}】`)
-          await hlyylb();
-          await $.wait(1000);
-          await hlyyqd()
-          await $.wait(3000);
-          await hlyyqdfb()
-          await $.wait(3000);
-          await hlyygg()
-          await $.wait(3000);
-          await hlyysp()
-          await $.wait(3000);
-          await hlyyfx()
-          await $.wait(3000);
-          await hlyyfxpj()
-          await $.wait(3000);
-          await hlyytg()
-          await $.wait(3000);
-          await hlyytgfb()
-          await $.wait(3000);
-          await hlyyzslb()
-          await $.wait(3000);
-          await hlyyzs()
-          await $.wait(3000);
-          await hlyyxx()
-          await hlyyme()
-          await hlyytx()
-  }
-
-
-
-
-
-
-
-
-
-
+          
 //葫芦音乐信息
 function hlyyxx(timeout = 0) {
   return new Promise((resolve) => {
