@@ -102,11 +102,6 @@ let txje = txsz[hltxje]
           await hlyyme()
           await hlyytx()
   }
-}}
-
-})()
-  .catch((e) => $.logErr(e))
-  .finally(() => $.done())
 
 
 
