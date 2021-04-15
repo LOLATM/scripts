@@ -55,19 +55,6 @@ let txsz = ['','BsjB-5WE54sKKCP0kIMORs1WbWzmM5gRg','0r7ipKknU4gqurOo71KH2kPFzkwl
 let hltxje = ($.getval('hltxje') || '1');
 let txje = txsz[hltxje]
 
-!(async () => {
-  if (typeof $request !== "undefined") {
-    await hlyyck()
-   
-  } else {hlyyurlArr.push($.getdata('hlyyurl'))
-    hlyyhdArr.push($.getdata('hlyyhd'))
-    hlyybodyArr.push($.getdata('hlyybody'))
-    let hlyycount = ($.getval('hlyycount') || '1');
-  for (let i = 2; i <= hlyycount; i++) {
-    hlyyurlArr.push($.getdata(`hlyyurl${i}`))
-    hlyyhdArr.push($.getdata(`hlyyhd${i}`))
-    hlyybodyArr.push($.getdata(`hlyybody${i}`))
-  }
    
 //葫芦音乐信息
 function hlyyxx(timeout = 0) {
