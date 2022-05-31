@@ -13,7 +13,7 @@ const $ = new Env(`前台自动阅读`);
       <body><div id="timer"></div></body>
       <script>
           var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (3 - 3 + 1) + 3);
+          var maxtime = parseInt(Math.random() * (2 - 2 + 1) + 2);
           setTimeout(()=>window.history.back(),maxtime*1000);
           function CountDown() {
               if (maxtime >= 0) {
@@ -41,7 +41,7 @@ const $ = new Env(`前台自动阅读`);
       // 如果重定向的是微信文章，改写重定向地址
       let url302 = ($response.headers && $response.headers['Location']) || ''
       if (url302.match(/https?:\/\/mp.weixin.qq.com\/s/)) {
-        $response.headers['Location'] = $request.url.replace('/read_task/read', '/mock/read')
+        $response.headers['Location'] = $request.url.replace('/fast_reada/oiejr', '/mock/read')
         $.done({headers: $response.headers})
       } else {
         $.log(`未检查到待跳转的微信文章url：\n${JSON.stringify($response.headers, null, 2)}`)
