@@ -1,7 +1,11 @@
-const $ = new Env(`前台自动阅读`);
+/*
+*Aman - 194nb.com
+*/
+const $ = new Env(`阅读自动返回`);
 !(async () => {
   if (typeof $request !== "undefined") {
-    if ($request.url.indexOf('/mock/read') > 0) {
+    let url = $request.url
+    if (url.indexOf('/mock/read') > 0) {
       let body = `
       <html>
       <head>
@@ -13,11 +17,11 @@ const $ = new Env(`前台自动阅读`);
       <body><div id="timer"></div></body>
       <script>
           var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (8 - 8 + 1) + 8);
+          var maxtime = parseInt(Math.random() * (10 - 9 + 1) + 9, 10);
           setTimeout(()=>window.history.back(),maxtime*1000);
           function CountDown() {
               if (maxtime >= 0) {
-                  oBox.innerHTML = '结束倒计时'+maxtime+'秒';
+                  oBox.innerHTML = '返回倒计时'+maxtime+'秒';
                   --maxtime;
               } else{
                   clearInterval(timer);
@@ -38,13 +42,57 @@ const $ = new Env(`前台自动阅读`);
         $.done({status: 'HTTP/1.1 200 OK', headers, body})
       }
     } else if (typeof $response !== "undefined") {
-      // 如果重定向的是微信文章，改写重定向地址
-      let url302 = ($response.headers && $response.headers['Location']) || ''
-      if (url302.match(/http:\/\/mp.weixin.qq.com\/s/)) {
-        $response.headers['Location'] = $request.url.replace('/v1/jump', '/mock/read')
-        $.done({headers: $response.headers})
+      if (url.match(/https?:\/\/mp\.weixin\.qq\.com\/s.+/)) {
+        let body = $response.body
+        if (body.indexOf('</script>') > 0) {
+          body = body.replace('</script>', 'setTimeout(()=>window.history.back(),10000); </script>')
+          $.done({body})
+        } else {
+          $.log(`注入自动返回脚本失败：未找到替换数据`)
+        }
+      } else if (url.indexOf('v1/task') > 0) {
+        let data = $.toObj($response.body, {})
+        if (data.errcode == 0 && (data = data.data)) {
+          if (data.type == 'read' && data['session_link']) {
+            if ((data.wx_read || 0) - 0 <= 2) {
+              $.setval(new Date().getTime() + '', 'ysmReadTime')
+            }
+            $.log(`疑似鉴权文章:${data.wx_read}`)
+          }
+        }
       } else {
-        $.log(`未检查到待跳转的微信文章url：\n${JSON.stringify($response.headers, null, 2)}`)
+        // 如果重定向的是微信文章，改写重定向地址
+        let url302 = ($response.headers && $response.headers['Location']) || ''
+        if (url302.match(/https?:\/\/mp\.weixin\.qq\.com\/s/)) {
+          let mock = true
+          if (url.indexOf('v1/jump?') > 0) {
+            // jump接口，需判断是否疑似鉴权阅读，否才修改重定向地址
+            let time = ($.getval('ysmReadTime') || '0') - 0
+            if (new Date().getTime() - time <= 6000) {
+              // 6秒内跳转的疑似鉴权文章请求，需进入微信文章页面
+              mock = false
+            }
+          } else if (url.indexOf('reada/jump?') > 0 || url.indexOf('task/read?ch=fq') > 0) {
+            // 番茄看看的阅读文章，需进入微信文章页面后自动返回
+            mock = false
+          }
+          if (mock) {
+            $.log('修改重定向地址为倒计时空白页面')
+            let host = url.match(/^https?:\/\/(.+?)\//)[1]
+            $response.headers['Location'] = `http://${host}/mock/read`
+            $.done({headers: $response.headers})
+          } else {
+            $.log('为重定向的微信文章地址添加注入标识')
+            if (!url302.indexOf('?')) {
+              $response.headers['Location'] = url302 + '?k=feizao'
+            } else if (url302.indexOf('?') && url302.indexOf('&')) {
+              $response.headers['Location'] = url302.replace('&', `&k=feizao&`)
+            } else {
+              $response.headers['Location'] = url302.replace('?', `?k=feizao&`)
+            }
+            $.done({headers: $response.headers})
+          }
+        }
       }
     }
   }
