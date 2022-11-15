@@ -33,11 +33,11 @@ const $ = new Env(`前台自动阅读`);
       <body><div id="timer"></div></body>
       <script>
           var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (10 - 9 + 1) + 9, 10);
+          var maxtime = parseInt(Math.random() * (6 - 3 + 1) + 3, 4, 5, 6);
           setTimeout(()=>window.history.back(),maxtime*1000);
           function CountDown() {
               if (maxtime >= 0) {
-                  oBox.innerHTML = '返回倒计时'+maxtime+'秒';
+                  oBox.innerHTML = '结束倒计时'+maxtime+'秒';
                   --maxtime;
               } else{
                   clearInterval(timer);
