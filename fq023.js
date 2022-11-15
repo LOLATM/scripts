@@ -21,7 +21,7 @@ http-request ^http://.+/mock/read\? script-path=https://raw.githubusercontent.co
 const $ = new Env(`前台自动阅读`);
 !(async () => {
   if (typeof $request !== "undefined") {
-    if ($request.url.indexOf('/fast_reada/oiejr') > 0) {
+    if ($request.url.indexOf('/mock/read') > 0) {
       let body = `
       <html>
       <head>
@@ -33,11 +33,11 @@ const $ = new Env(`前台自动阅读`);
       <body><div id="timer"></div></body>
       <script>
           var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (6 - 5 + 1) + 5,6);
+          var maxtime = parseInt(Math.random() * (10 - 9 + 1) + 9, 10);
           setTimeout(()=>window.history.back(),maxtime*1000);
           function CountDown() {
               if (maxtime >= 0) {
-                  oBox.innerHTML = '结束倒计时'+maxtime+'秒';
+                  oBox.innerHTML = '返回倒计时'+maxtime+'秒';
                   --maxtime;
               } else{
                   clearInterval(timer);
@@ -61,7 +61,7 @@ const $ = new Env(`前台自动阅读`);
       // 如果重定向的是微信文章，改写重定向地址
       let url302 = ($response.headers && $response.headers['Location']) || ''
       if (url302.match(/https?:\/\/mp.weixin.qq.com\/s/)) {
-        $response.headers['Location'] = $request.url.replace('/task/read', '/fast_reada/oiejr')
+        $response.headers['Location'] = $request.url.replace('/fast_reada/oiejr', '/mock/read')
         $.done({headers: $response.headers})
       } else {
         $.log(`未检查到待跳转的微信文章url：\n${JSON.stringify($response.headers, null, 2)}`)
