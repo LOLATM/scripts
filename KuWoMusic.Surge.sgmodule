@@ -1,3 +1,5 @@
+#!name=酷我音乐
+#!desc=代码重构,这版是最完美！！！的酷我解锁
 [Script]
 酷我音乐解锁Vip皮肤 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme ,requires-body=1,max-size=0,script-path=https://qxnav.com/rules/QuantumultX/js/backup/js/kwyy.js
 酷我解锁无损下载 = type=http-request,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d$,requires-body=1,max-size=0,script-path=https://qxnav.com/rules/QuantumultX/js/backup/js/kuwodl.js
