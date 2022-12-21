@@ -12,19 +12,7 @@ const $ = new Env(`前台自动阅读`);
       </style>
       <body><div id="timer"></div></body>
       <script>
-          var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (3 - 3 + 1) + 3);
-          setTimeout(()=>window.history.back(),maxtime*1000);
-          function CountDown() {
-              if (maxtime >= 0) {
-                  oBox.innerHTML = '结束倒计时'+maxtime+'秒';
-                  --maxtime;
-              } else{
-                  clearInterval(timer);
-                  window.history.back();
-              }
-          }
-          timer = setInterval("CountDown()", 1000);
+          response-body setTimeout(()=>window.history.back(),8000); 
         </script>
       </html>
       `
