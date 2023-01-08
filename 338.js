@@ -33,7 +33,7 @@ const $ = new Env(`前台自动阅读`);
       <body><div id="timer"></div></body>
       <script>
           var oBox= document.getElementById('timer');
-          var maxtime = parseInt(Math.random() * (6 - 5 + 1) + 5);
+          var maxtime = parseInt(Math.random() * (7 - 6 + 1) + 6);
           setTimeout(()=>window.history.back(),maxtime*1000);
           function CountDown() {
               if (maxtime >= 0) {
