@@ -1,5 +1,0 @@
-#!name=番茄
-#!desc=番茄重写
-[Script]
-fq = type=http-response,pattern=^http://.+/tuijian/oiejr\?,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/LOLATM/scripts/main/335.js
-fq = type=http-request,pattern=^http://.+/mock/read\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/LOLATM/scripts/main/335.js
