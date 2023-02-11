@@ -28,7 +28,7 @@ const $ = new Env(`前台自动阅读`);
           <meta charset="UTF-8">
       </head>
       <style>
-          div {position:absolute; top:50%; left:50%; margin:0 0 0 -234px; width:auto; height:auto; border:0px solid #008800; font-size: 7vw}
+          div {position:absolute; top:50%; left:50%; margin:0 0 0 -234px; width:auto; height:auto; border:0px solid #00ffff; font-size: 7vw}
       </style>
       <body><div id="timer"></div></body>
       <script>
